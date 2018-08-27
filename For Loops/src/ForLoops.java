@@ -2,14 +2,18 @@ import java.util.Scanner;
 public class ForLoops
 	{
 
+		static int lowerBound;
+		static int upperBound;
+		static int total;
+		
 		public static void main(String[] args)
-			{
+			{				
 				//challengeOne();
 				//challengeTwo();
 				//challengeThree();
 				//challengeFour();
 				//challengeFive();
-				//challengeSix();
+				challengeSix();
 				challengeSeven();
 				challengeEight();			
 
@@ -88,12 +92,12 @@ public class ForLoops
 				
 				Scanner userInput = new Scanner(System.in);
 				System.out.println("Enter a lowerbound number");
-				int lowerBound = userInput.nextInt();
+				lowerBound = userInput.nextInt();
 				
 				System.out.println("Enter an upperbound number");
-				int upperBound = userInput.nextInt();
+				upperBound = userInput.nextInt();
 				
-				int total = 0;
+				total = 0;
 				
 				for(int i = lowerBound; i <= upperBound; i++)
 					{
@@ -110,7 +114,17 @@ public class ForLoops
 		private static void challengeSeven()
 			{
 				
-				
+				for(int i = lowerBound; i <= upperBound; i++)
+					{
+						
+						if(i % 3 == 0)
+							{
+								total += i;
+							}
+						
+						System.out.println(total);
+						
+					}
 				
 				
 				
