@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 public class ForLoops
 	{
 
@@ -8,8 +8,8 @@ public class ForLoops
 				//challengeTwo();
 				//challengeThree();
 				//challengeFour();
-				challengeFive();
-				challengeSix();
+				//challengeFive();
+				//challengeSix();
 				challengeSeven();
 				challengeEight();			
 
@@ -85,13 +85,35 @@ public class ForLoops
 
 		private static void challengeSix()
 			{
-				// TODO Auto-generated method stub
+				
+				Scanner userInput = new Scanner(System.in);
+				System.out.println("Enter a lowerbound number");
+				int lowerBound = userInput.nextInt();
+				
+				System.out.println("Enter an upperbound number");
+				int upperBound = userInput.nextInt();
+				
+				int total = 0;
+				
+				for(int i = lowerBound; i <= upperBound; i++)
+					{
+						total += i;
+					}
+				
+				System.out.println("The sum of all numbers between "+ lowerBound + " and " + upperBound + " is " + total);
+				
+				
+				
 				
 			}
 
 		private static void challengeSeven()
 			{
-				// TODO Auto-generated method stub
+				
+				
+				
+				
+				
 				
 			}
 
