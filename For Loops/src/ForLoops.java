@@ -4,10 +4,10 @@ public class ForLoops
 
 		public static void main(String[] args)
 			{
-				challengeOne();
-				challengeTwo();
-				challengeThree();
-				challengeFour();
+				//challengeOne();
+				//challengeTwo();
+				//challengeThree();
+				//challengeFour();
 				challengeFive();
 				challengeSix();
 				challengeSeven();
@@ -43,19 +43,43 @@ public class ForLoops
 
 		private static void challengeThree()
 			{
-				
+				for(int i = 1; i <= 5; i++)
+					{
+						System.out.print(i + " ");
+					}
 				
 			}
 
 		private static void challengeFour()
 			{
-				// TODO Auto-generated method stub
+				for(int i = 10; i > 0; i--)
+					{
+						System.out.println(i);
+						try
+							{
+								Thread.sleep(1000);
+							} catch (InterruptedException e)
+							{
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+					}
+				System.out.println("Liftoff!!!");
+				
 				
 			}
 
 		private static void challengeFive()
 			{
-				// TODO Auto-generated method stub
+				int total =	0;
+				for(int i = 5; i <= 100; i = i + 5)
+					{
+						total += i;
+						
+						
+					}
+				System.out.println(total);
+				
 				
 			}
 
