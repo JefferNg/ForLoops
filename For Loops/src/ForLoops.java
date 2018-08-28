@@ -133,7 +133,10 @@ public class ForLoops
 
 		private static void challengeEight()
 			{
-				// TODO Auto-generated method stub
+				
+			
+			
+			
 				
 			}
 
